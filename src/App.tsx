@@ -1,40 +1,40 @@
-// import { PrimaryButton } from "./components/PrimaryButton";
-// import { User } from "./components/users/User";
-// import { UserProfile } from "./components/users/userProfile";
+import { PrimaryButton } from "./components/PrimaryButton";
+import { User } from "./components/users/User";
+import { UserProfile } from "./components/users/userProfile";
 
 
-// export const App = () => {
-//   return (
-//     <div>
-//       <h1>Hello world</h1>
-
-//       <PrimaryButton actionType="deleted"></PrimaryButton>
-//       <UserProfile></UserProfile>
-//       <User name="Jane Doe" email="jane.doe@example.com"></User>
-
-//     </div>
-//   );
-// };
-
-
-import { Routes, Route } from 'react-router-dom';
-import MainLayout from './MainLayout';
-import CreatePost from './pages/CreatePost';
-
-const App = () => {
+export const App = () => {
   return (
-    <Routes>
+    <div>
+      <h1>Hello world</h1>
 
-      <Route element={<MainLayout />}>
-        {/* <Route path="/" element={<Home />} /> */}
-        {/* <Route path="/posts" element={<Posts />} /> */}
-        <Route path="/posts/create" element={<CreatePost />} />
-        {/* <Route path="/posts/edit/:id" element={<EditPost />} /> */}
-      </Route>
-
-    </Routes>
+      <PrimaryButton actionType="deleted"></PrimaryButton>
+      <UserProfile></UserProfile>
+      <User name="Jane Doe" email="jane.doe@example.com"></User>
+         
+    </div>
   );
 };
 
-export default App;
+
+// import { Routes, Route } from 'react-router-dom';
+// import MainLayout from './MainLayout';
+// import CreatePost from './pages/CreatePost';
+
+// const App = () => {
+//   return (
+//     <Routes>
+
+//       <Route element={<MainLayout />}>
+//         {/* <Route path="/" element={<Home />} /> */}
+//         {/* <Route path="/posts" element={<Posts />} /> */}
+//         <Route path="/posts/create" element={<CreatePost />} />
+//         {/* <Route path="/posts/edit/:id" element={<EditPost />} /> */}
+//       </Route>
+
+//     </Routes>
+//   );
+// };
+
+// export default App;
 
